@@ -33,13 +33,9 @@ def bubble_sort(arr):
             cur_index += 1
             next_index += 1
         i += 1
-
-        pass
-
     return arr
 
 
-bubble_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7])
 '''
 STRETCH: implement the Counting Sort function below
 
