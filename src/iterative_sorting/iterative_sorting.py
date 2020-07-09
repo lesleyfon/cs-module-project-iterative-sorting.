@@ -4,23 +4,32 @@ def selection_sort(arr):
     for i in range(0, len(arr) - 1):
         cur_index = i
         smallest_index = cur_index
-        # TO-DO: find next smallest element
-        # (hint, can do in 3 loc)
-        # Your code here
+        tracker = cur_index
 
+        while tracker < (len(arr)):
 
-        # TO-DO: swap
-        # Your code here
+            if arr[tracker] < arr[smallest_index]:
+                smallest_index = tracker
+            tracker += 1
+        arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[cur_index]
+
+    print(arr)
+
+    # [0, 5, 8, 4, 2, 9, 6, 1, 3, 7]
+
+    # TO-DO: swap
+    # Your code here
 
     return arr
 
-
 # TO-DO:  implement the Bubble Sort function below
+
+
 def bubble_sort(arr):
     # Your code here
 
-
     return arr
+
 
 '''
 STRETCH: implement the Counting Sort function below
@@ -39,8 +48,26 @@ buckets.
 
 What is the time and space complexity of the counting sort algorithm?
 '''
+
+
 def counting_sort(arr, maximum=None):
     # Your code here
 
-
     return arr
+
+
+# # Add up and print the sum of the all of the minimum elements of each inner array:
+# # The expected output is given by:
+# # 4 + -1 + 9 + -56 + 201 + 18 = 175
+# # You may use whatever programming language you'd like.
+# # Verbalize your thought process as much as possible before writing any code. Run through the UPER problem solving framework while going through your thought process.
+
+# arr = [[8, 4], [90, -1, 3], [9, 62], [-7, -1, -56, -6], [201], [76, 18]]
+# sum_total = 0
+
+# for sub_arr in arr:
+
+#     for i in len(sub_arr) - 1:
+
+
+# print(sum_total)
