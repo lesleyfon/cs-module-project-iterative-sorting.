@@ -11,14 +11,8 @@ def selection_sort(arr):
             if arr[tracker] < arr[smallest_index]:
                 smallest_index = tracker
             tracker += 1
+
         arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[cur_index]
-
-    print(arr)
-
-    # [0, 5, 8, 4, 2, 9, 6, 1, 3, 7]
-
-    # TO-DO: swap
-    # Your code here
 
     return arr
 
@@ -27,10 +21,25 @@ def selection_sort(arr):
 
 def bubble_sort(arr):
     # Your code here
+    i = 0
+    while i <= len(arr) - 1:
+        cur_index = 0
+        next_index = cur_index + 1
+
+        while next_index < len(arr):
+
+            if arr[cur_index] > arr[next_index]:
+                arr[cur_index], arr[next_index] = arr[next_index], arr[cur_index]
+            cur_index += 1
+            next_index += 1
+        i += 1
+
+        pass
 
     return arr
 
 
+bubble_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7])
 '''
 STRETCH: implement the Counting Sort function below
 
