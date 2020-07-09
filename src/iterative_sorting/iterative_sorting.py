@@ -23,6 +23,7 @@ def bubble_sort(arr):
     # Your code here
     i = 0
     while i <= len(arr) - 1:
+
         cur_index = 0
         next_index = cur_index + 1
 
